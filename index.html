@@ -65,22 +65,22 @@
     <!-- Navbar End -->
 
 
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark">Video Player</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="videoPlayer" width="100%" height="315" src="Blog_video.mp4" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- Video Modal End -->
 
 
@@ -389,11 +389,12 @@
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="signup -2.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="alarm.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="signup.jpg" data-lightbox="portfolio">
+                            <a href="portfolio-3.jpg" data-lightbox="portfolio">
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
@@ -401,9 +402,30 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="portfolio-3.jpg" alt="">
+                        <img class="img-fluid rounded w-100" src="HOTEL_mgt.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="portfolio-3.jpg" data-lightbox="portfolio">
+                            <a href="portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="login & signup.jpg" alt=""  height="300px">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- marketing -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="marketing.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="marketing.jpeg" data-lightbox="portfolio">
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
@@ -419,41 +441,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="login page.jpg"  height="5rem">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="login page.jpg"  data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="portfolio-5.jpg" alt=""  height="300px">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                 
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="portfolio-6.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- desine -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="flipkart_colone.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="signup.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="amazone.png"  height="5rem">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="amazone.png"  data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="food_oder.jpg"  height="5rem">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="food_oder.jpg"  data-lightbox="portfolio">
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
@@ -514,20 +538,20 @@
             <div class="row">
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="landin.png" alt="">
+                        <img class="img-fluid rounded w-100" src="blog.jpg" alt="">
                         <div class="blog-date">
-                            <h2 class="font-weight-bold mb-n1">Colone of landing page is a project of cognifyz Technology</h2>
-                            <small class="text-white text-uppercase"><a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a></small>
+                            <h2 class="font-weight-bold mb-n1">College Memories</h2>
+                            <!-- <small class="text-white text-uppercase"><a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a></small> -->
                         </div>
                     </div>
                     <h5 class="font-weight-medium mb-4">  </h5>
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="amazone.png" alt="">
+                        <img class="img-fluid rounded w-100" src="blog_1.jpg" alt="">
                         <div class="blog-date">
-                            <h2 class="font-weight-bold mb-n1">Colone of amazon website design</h2>
-                            <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                            <h2 class="font-weight-bold mb-n1">Group pic with Friends</h2>
+                            <!-- <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a> -->
                             <small class="text-white text-uppercase"></small>
                         </div>
                         
@@ -537,10 +561,11 @@
                 </div>
                 <div class="col-lg-4 mb-5">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="portfolio.png" alt="">
+                        <img class="img-fluid rounded w-100" src="Blog_2.jpg" alt="">
                         <div class="blog-date">
-                            <h2 class="font-weight-bold mb-n1">Clone of portfolio website design</h2>
-                            <small class="text-white text-uppercase"><a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a></small>
+                            <h2 class="font-weight-bold mb-n1">Workshop of Robotics</h2>
+                            <!-- <small class="text-white text-uppercase"><a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a></small> -->
+                           
                         </div>
                     </div>
                     <h5 class="font-weight-medium mb-4"></h5>
