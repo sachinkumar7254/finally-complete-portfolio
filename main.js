@@ -115,3 +115,39 @@
     
 })(jQuery);
 
+        document.getElementById("downloadCvBtn").addEventListener("click", function () {
+            // Replace with the actual CV file path
+            const cvFileUrl = "sachin Cv.pdf"; 
+
+            // Create an anchor element
+            const anchor = document.createElement("a");
+            anchor.href = cvFileUrl;
+            anchor.download = "sachin Cv.pdf";  // Set the downloaded file name
+
+            // Append to body, trigger click, and remove it
+            document.body.appendChild(anchor);
+            anchor.click();
+            document.body.removeChild(anchor);
+        });
+
+        // Function to toggle between light and dark mode
+function toggleMode() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+    
+    // Save the user's preference in localStorage
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// Check for saved user preference
+window.onload = () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+};
+
