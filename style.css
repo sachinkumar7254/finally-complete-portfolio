@@ -34,6 +34,7 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: "Roboto", sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    
   }
   
   *,
@@ -55,7 +56,7 @@
   
   body {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -256,6 +257,14 @@
   [role="button"] {
     cursor: pointer;
   }
+
+  button{
+    border-color: aquamarine;
+    height: 41px;
+    border-radius: 28px;
+    background: white;
+  }
+
   
   select {
     word-wrap: normal;
@@ -6356,7 +6365,8 @@
   }
   
   .bg-primary {
-    background-color: #0BCEAF !important;
+    background-color: #a60ac736 !important;
+    /* background-image:url(img/pic10.png) ,no-repeat; */
   }
   
   a.bg-primary:hover, a.bg-primary:focus,
@@ -9524,7 +9534,13 @@
   .text-white {
     color: #fff !important;
   }
-  
+  .text-white h6 {
+    color: #fff !important;
+  }
+ /* #h6{
+  color: #ffc107;
+  font-size: 2rem;
+ }   */
   
   .text-primary {
     color: purple !important;
@@ -9816,7 +9832,8 @@
   
   .typed-cursor {
     font-size: 45px;
-    color: #ffffff;
+    color:#ffc107;
+    
   }
   
   .btn-play {
@@ -9921,17 +9938,31 @@
   
   .service-icon {
     width: 60px;
+   
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 60px;
   }
+  .col-lg-4{
+    height: 300px;
+    gap: 6px;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-left-style: groove;
+    border-right-style: groove;
+    border-width: .3rem;
+    border-color: red;
+  }
+  .img-fluid{
+    height: 280px;
+  }
   
   .portfolio-item .portfolio-btn {
     position: absolute;
-    width: 0;
-    height: 0;
+    width: 200px;
+    height:200px;
     top: 50%;
     left: 50%;
     border-radius: 4px;
@@ -9962,26 +9993,33 @@
   }
   
   .testimonial-carousel .owl-dot.active {
-    background: #0BCEAF;
+    background: #09aa90;
   }
   
   .blog-date {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    display: flex;
+    width: 280px;
+    height: 100px;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
+    flex-direction: row-reverse;
+    top: calc(50% - 2px);
+    left: calc(30% - 30px);
     border-radius: 60px;
-    background: #0BCEAF;
+    /* background: #; */
   }
+ h2{
+  color: #ffd700;
+  font-size: 20px;
+
+ }
+  
   
   .contact-form .help-block ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
   }
+  
   
