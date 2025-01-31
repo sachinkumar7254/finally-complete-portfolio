@@ -151,3 +151,19 @@ window.onload = () => {
     }
 };
 
+ // Get the video element
+
+$(document).ready(function() {
+    var videoSrc;
+
+    $('.btn-play').click(function() {
+        videoSrc = $(this).attr("data-src");
+        $("#videoPlayer").attr("src", videoSrc + "?autoplay=1&rel=0"); // Autoplay video when modal opens
+    });
+
+    $('#videoModal').on('hidden.bs.modal', function() {
+        $("#videoPlayer").attr("src", ""); // Stop video when modal closes
+    });
+});
+
+
