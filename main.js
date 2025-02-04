@@ -165,5 +165,65 @@ $(document).ready(function() {
         $("#videoPlayer").attr("src", ""); // Stop video when modal closes
     });
 });
+// HTML structure for the popup
+const popupHTML = `
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="certificateImage" src="" alt="Certificate" />
+    </div>
+  </div>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 50%;
+      text-align: center;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+`;
+
+document.body.insertAdjacentHTML("beforeend", popupHTML);
+
+// Function to open the modal
+function viewCertificate() {
+  document.getElementById("certificateModal").style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById("certificateModal").style.display = "none";
+}
+
+// Adding event listener to close modal when clicking outside content
+window.onclick = function(event) {
+  const modal = document.getElementById("certificateModal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
+
+// Example usage: Add this button in your HTML
+// <button onclick="viewCertificate()">View Certificate</button>
+
 
 
